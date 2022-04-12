@@ -1,0 +1,131 @@
+.wrapper {
+    display: grid;
+
+    /* fr= fraction */
+    grid-template-columns: repeat(12, 1fr);
+
+    /* first number is height, second how big it can get */
+
+
+    grid-column-gap: 5em;
+
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "hr hr hr hr hr hr hr hr hr hr hr hr"
+        ". . m m m m m m m m . ."
+        "f f f f f f f f f f f f";
+
+}
+
+.header {
+    grid-area: h;
+}
+
+.hero {
+    grid-area: hr;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+
+    margin: 20px 0;
+}
+
+.main {
+    grid-area: m;
+
+}
+
+.footer {
+    grid-area: f;
+    min-height: 60px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.logo1 {
+
+    height: 70px;
+    min-width: 70px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+
+
+p {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 50px;
+    padding: 8px;
+
+
+}
+
+h2 {
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    background color: darkorange;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+
+}
+
+a {
+    text-decoration: none;
+    color: red;
+
+
+}
+
+
+.map {
+    text-align: center;
+
+
+}
+
+/*target screen with max width */
+@media (max-width: 500px) {
+    .header {
+        background: red;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    html {
+        background: green;
+    }
